@@ -24,12 +24,16 @@ public class BMI {
 	}
 	public void setHeight(double height) {
 		this.height = height;
+		// bmi 的資料要重新計算
+		this.bmi = calcBmi();
 	}
 	public double getWeight() {
 		return weight;
 	}
 	public void setWeight(double weight) {
 		this.weight = weight;
+		// bmi 的資料要重新計算
+		this.bmi = calcBmi();
 	}
 	public double getBmi() {
 		return bmi;
@@ -41,4 +45,5 @@ public class BMI {
 	public String toString() {
 		return "BMI [name=" + name + ", height=" + height + ", weight=" + weight + ", bmi=" + bmi + "]";
 	}
+	
 }
